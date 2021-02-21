@@ -7,6 +7,7 @@ h1{
 }
 #scores{
 padding:920px;
+flex-wrap:inherit;
 }
 #wrapper {
     position: absolute;
@@ -86,8 +87,7 @@ padding:920px;
 
 #Submit {
     background-color:rgb(7, 153, 153) ;
-    margin-left: 33%;
-    padding: 15px 32px;
+    padding: 15px 30px;
     font-size: 20px;
     color: white;
 }
