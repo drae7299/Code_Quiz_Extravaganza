@@ -1,11 +1,14 @@
 body{
     background-color: aquamarine;
 }
-
+h1{
+    text-align: center;
+    font-style: oblique;
+}
 #wrapper {
     position: absolute;
-    left: 30%;
-    top: 20%;
+    left: 33%;
+    top: 15%;
     width: 450px;
     height: 450px;
     border: 1px solid rgb(7, 153, 153);
@@ -13,14 +16,19 @@ body{
 }
 #startTime {
     background-color: rgb(7, 153, 153);
-    margin-left: 33%;
-    padding: 15px 32px;
+    padding: 20px 32px;
     font-size: 20px;
     color: white;
+    align-items: center;
+}
+#startTime:hover{
+    color: chartreuse;
+    background-color: coral;
+    border-radius: 20px;
 }
 #questionsDiv{
     margin:25px;
-    text-align: absolute;
+    text-align: center;
     font-weight:300 ;
 }
 
@@ -50,4 +58,82 @@ body{
     top: 25%;
     right:5%;
     text-align:center;
+}
+
+
+#Submit {
+    background-color:rgb(7, 153, 153) ;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+button{
+    padding: 20%;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: rgb(7, 153, 153) ;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 786px) {
+        body {
+            max-width: 786px;
+        }
+ 
+    #wrapper {
+        position: absolute;
+        left: 20%;
+    }
+    a {
+        margin-left: 20%;
+    }
+        #goBack {
+            position: relative;
+            left: 55%;
+        }
+        #clear {
+            position: relative;
+            right: 5%;
+        }
+    }
+         @media screen and (max-width: 640px) {
+     body {
+            min-width: 640px;
+        }
+    #wrapper {
+        position: absolute;
+        left: 10%;
+    }
+      a {
+          margin-left: 10%;
+      }
 }
