@@ -12,7 +12,7 @@ var questions = [
     {
         title: "NORMALY used data types DO NOT include?",
         choices: ["Strings","Booleans","Clickeroos","Numbers"],
-        answer: "CLickeroos"
+        answer: "Clickeroos"
     },
     {
         title: "In a function, your If and Else statements MUST be contained ____?",
@@ -31,8 +31,8 @@ var questions = [
     },
     {
         title: "What can be used to Print out live information into your Console via Devtools Inspector?",
-        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
-        answer: "console log"
+        choices: ["Javascript", "Terminal / Bash", "For loops", "Console log"],
+        answer: "Console log"
     },
 
 ];
@@ -87,6 +87,15 @@ function compare(event) {
         }
 
     }
+    questionIndex++;
+
+    if (questionIndex >= questions.length) {
+        allDone();
+        createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+    } else {
+        render(questionIndex);
+    }
+    questionsDiv.appendChild(createDiv);
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
@@ -154,7 +163,7 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            window.location.replace("./HighScores.html");
+            window.location.replace("./HS.html");
         }
     });
 

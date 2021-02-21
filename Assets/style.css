@@ -9,17 +9,19 @@ h1{
     position: absolute;
     left: 33%;
     top: 15%;
-    width: 450px;
+    width: 550px;
     height: 450px;
     border: 1px solid rgb(7, 153, 153);
     background-color: azure;
+    box-shadow: 20px 20px 30px;
+    border-radius: 20px;
 }
 #startTime {
     background-color: rgb(7, 153, 153);
     padding: 20px 32px;
     font-size: 20px;
     color: white;
-    align-items: center;
+    align-items: absolute;
 }
 #startTime:hover{
     color: chartreuse;
@@ -29,11 +31,15 @@ h1{
 #questionsDiv{
     margin:25px;
     text-align: center;
+    padding-left: 15px;
     font-weight:300 ;
+    padding-top: 45px;
 }
 
 #currentTime{
     float:right;
+    padding-top: 20px;
+    padding-right: 15px;
 }
 
 #goBack{
@@ -41,25 +47,32 @@ h1{
     position:relative;
     padding:10px;
     font-size:20px;
-    color:grey;
+    color:white;
     top:25%;
-    left:50%;
+    left:45%;
     width: auto;    
     text-align: center; 
     text-decoration: none;
+}
+#goBack:hover{
+    color:chartreuse;
+    background-color: coral;
 }
 
 #clear{
     background-color: rgb(7, 153, 153);
     position: relative; 
     padding: 10px;  
-    font-size: 15px;
+    font-size: 20px;
     color: white;   
     top: 25%;
-    right:5%;
-    text-align:center;
+    right:30%;
+   
 }
-
+#clear:hover{
+    color:chartreuse;
+    background-color:coral;
+}
 
 #Submit {
     background-color:rgb(7, 153, 153) ;
@@ -97,11 +110,15 @@ h1 {
 
 li {
     background-color: rgb(7, 153, 153) ;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 5px 15px;
     width: 80%;
     font-size: 18px;
     color: white;
+
+}
+#text{
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 786px) {
