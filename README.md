@@ -8,11 +8,11 @@ Keep in mind that you time answering these questions will be a big role in you o
 
 ### Features
 This COde Quiz will provide the following
-. 5 interactive questions
-. Active timer
-. High Score tracker
-. Competative Timer
-. Local Storage for High Scores!
+* 5 interactive questions
+* Active timer
+* High Score tracker
+* Competative Timer
+* Local Storage for High Scores!
 
 #### Visuals
 ![Code Quiz pt1](https://user-images.githubusercontent.com/77699769/108617811-33491800-73e7-11eb-9160-146098688fb0.PNG)
