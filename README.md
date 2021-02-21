@@ -7,7 +7,7 @@ This Code Quiz will allow you to test your HTML, JS and CSS knowledge and put it
 Keep in mind that you time answering these questions will be a big role in you overall score so be as fast and correct as possible!
 
 ### Features
-This COde Quiz will provide the following
+This Code Quiz will provide the following
 * 5 interactive questions
 * Active timer
 * High Score tracker
