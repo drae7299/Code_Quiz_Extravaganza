@@ -5,6 +5,9 @@ h1{
     text-align: center;
     font-style: oblique;
 }
+#scores{
+padding:920px;
+}
 #wrapper {
     position: absolute;
     left: 33%;
