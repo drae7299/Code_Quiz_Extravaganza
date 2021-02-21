@@ -10,7 +10,6 @@ p{
 }
 #scores{
 padding:920px;
-flex-wrap:inherit;
 }
 #wrapper {
     position: absolute;
