@@ -1,3 +1,4 @@
+// GLobal Vars
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
@@ -9,6 +10,7 @@ var holdInterval = 0;
 var penalty = 10;
 var ulCreate = document.createElement("ul");
 var questions = [
+    //Questions
     {
         title: "NORMALY used data types DO NOT include?",
         choices: ["Strings","Booleans","Clickeroos","Numbers"],
@@ -36,7 +38,7 @@ var questions = [
     },
 
 ];
-
+//Event listener on start click to begin 60 sec timer
 timer.addEventListener("click", function () {
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
@@ -48,10 +50,11 @@ timer.addEventListener("click", function () {
                 allDone();
                 currentTime.textContent = "Time's up!";
             }
-        }, 1000);
+        }, 1000);//mms
     }
     render(questionIndex);
 });
+//Fuction that renders questions in div created via HTML
 function render(questionIndex) {
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
@@ -68,6 +71,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
+//Function to compare if the user choice is incorrect or correct and thus displays a message. Also will subtract points via penalty if wrong choice is picked
 function compare(event) {
     var element = event.target;
 
@@ -87,7 +91,7 @@ function compare(event) {
 
     }
     questionIndex++;
-
+//Ends quiz displays score,and questions correct
     if (questionIndex >= questions.length) {
         allDone();
         createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
